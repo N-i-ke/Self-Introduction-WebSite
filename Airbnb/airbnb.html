@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <!--index回避-->
+    <meta name="robots" content="noindex">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="icon" href="img/Airbnb_icon-icons.com_66791.png">
+    <!--スタイルシートの読み込み-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>出張 - Airbnb</title>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="header__inner">
+            <div class="main__video">
+                <video id="video" src="video/6fe357d4e08e5401a90ab38a6e71ab27_4000k_2.webm"></video>
+            </div>
+            <div class="top__box">
+                <div class="left">
+                    <i class="fab fa-airbnb"></i>
+                    <div class="btn">
+                        <div class="openbtn1">
+                            <!-- ここではクリックされたら -->
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <nav id="g-nav">
+                            <div id="g-nav-list">
+                                <!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+
+                                <div class="title">ホーム</div>
+
+                                <div class="box1">
+                                    <ul class="list1">
+                                        <li><a href="#">アプリをダウンロード</a></li>
+                                        <li><a href="#">友達を招待する</a></li>
+                                        <li><a href="#">ホストを紹介</a></li>
+                                        <li><a href="#">Airbnbビジネスプログラム</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="box">
+                                    <ul class="list2">
+                                        <li><a href="">言語</a></li>
+                                        <li><a href="">日本語(JP)</a></li>
+                                        <li><a href="">通貨</a></li>
+                                        <li><a href="">¥ JPY</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="box">
+                                    <ul class="list3">
+                                        <li><a href="">お部屋を掲載</a></li>
+                                        <li><a href=""><span>月あたり最大¥127,819</span>の収益</a></li>
+                                        <li><a href="">お家のホスティングについて</a></li>
+                                        <li><a href="">体験をホストする</a></li>
+                                        <li><a href="">好きを仕事に</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="box">
+                                    <ul class="list4">
+                                        <li><a href="">ヘルプ</a></li>
+                                        <li><a href="">登録する</a></li>
+                                        <li><a href="">ログイン</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <nav>
+                        <ul class="list">
+                            <li><a href=""><i class="fas fa-globe" style="margin-right: 8px"></i>日本語(JP)</a></li>
+                            <li><a href=""><i class="fas fa-yen-sign" style="margin-right: 8px"></i>JPY</a></li>
+                            <li><a href="">ホストをはじめる</a></li>
+                            <li><a href="">ヘルプ</a></li>
+                            <li><a href="">登録する</a></li>
+                            <li><a href="">ログイン</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="top__center">
+                <h1 class="title">
+                    世界の果てまで、アット<br>ホーム
+                </h1>
+                <h3 class="watch">
+                    Airbnbビジネスプログラムの動画を見る ▸
+                </h3>
+            </div>
+            <div class="top__bottom">
+                <p class="mail">
+                    まずは仕事用メールアドレスの入力から
+                </p>
+                <div class="box">
+                    <input type="text" name="name" id="namelabel">
+
+                    <button><a href="">メールアドレスを追加</a></button>
+                </div>
+                <p class="bottom">
+                    出張管理をご担当ですか？<span>もっと詳しく</span> >
+                </p>
+            </div>
+            <!-- ビデオ再生ボタン -->
+            <button class="video-btn" id="video-btn" type="button">
+                <p class="text1">再生する</p>
+                <p class="text2">停止する</p>
+            </button>
+        </div>
+    </header>
+    <!-- main__top -->
+    <main>
+        <!-- main__top -->
+        <section class="main__top">
+            <div class="main__top__inner">
+                <div class="title">
+                    最高の仕事に必要なものをすべて完備
+                </div>
+                <div class="box">
+                    <div class="card">
+                        <figure>
+                            <img src="img/top_rated_homes.594e0eb1e34b7880bb86775ada115e3e.jpg" alt="">
+                        </figure>
+                        <p class="text">
+                            講評かの宿泊先&デザイナー<br>ズホテル
+                        </p>
+                    </div>
+                    <div class="card">
+                        <figure>
+                            <img src="img/team_building_experiences.3f19ab77dd84b309ac389548e82945e2.jpg" alt="">
+                        </figure>
+                        <p class="text">
+                            チームビルディング体験
+                        </p>
+                    </div>
+                    <div class="card">
+                        <figure>
+                            <img src="img/collaborate.57a5ee7e3810959008122839ce177452.jpg" alt="">
+                        </figure>
+                        <p class="text">
+                            コラボを育むスペース
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section__center -->
+        <section class="main__center">
+            <div class="main__center__inner">
+                <div class="box1">
+                    <div class="left">
+                        <figure>
+                            <img src="img/comfort_home.59ad50c846cfafdbbaa8a8df6367b468.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div class="right">
+                        <div class="box">
+                            <div class="title">
+                                出張先でも、アットホーム
+                            </div>
+                            <p class="text">
+                                出張の時も、新天地に異動の時も安心。他の出張者が5つ星評価を
+                                つけたお部屋やデザイナーズホテルを探しましょう。
+                            </p>
+                            <p class="link">
+                                仕事用スペースを完備した宿泊先を検索
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box2">
+                    <div class="left">
+                        <div class="box">
+                            <div class="title">
+                                チームの心をひとつに
+                            </div>
+                            <p class="text">
+                                ラーメン作り教室やカヌーレッスンに参加。
+                                普段オフィスでは目にできない同僚たちの意外な
+                                面に触れ、深いレベルでつながれます。
+                            </p>
+                            <p class="link">
+                                Airbnbの「体験」を検索
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <figure>
+                            <img src="img/team_building_made_easy.c9d2a84f730106d9e379bd928d355b2e.jpg" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <div class="box3">
+                    <div class="left">
+                        <figure>
+                            <img src="img/creativity.739950af22e14a8529cd6301e8ce9364.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div class="right">
+                        <div class="box">
+                            <div class="title">
+                                創造力をかきたてるスペース
+                            </div>
+                            <p class="text">
+                                煮詰まったら1日オフサイトで気分を変えてみませんか？
+                                ひらめきが湧く環境で、チームの生産性を高めましょう。
+                            </p>
+                            <p class="link">
+                                WI-Fi完備した宿泊先を見る
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- center -->
+    <section class="center">
+        <div class="center__inner">
+            <div class="box">
+                <div class="left">
+                    <div class="title">
+                        安全第一のシステム
+                    </div>
+                    <p class="text">
+                        セキュアな支払いシステムから経験者のレ<br>
+                        ビューまで、Airbnbは安全中心のシステム<br>
+                        です。
+                    </p>
+                    <p class="more">
+                        もっと詳しく
+                    </p>
+                </div>
+                <div class="right">
+                    <div class="title">
+                        グローバルカスタマーサ<br>ポート
+                    </div>
+                    <div class="text">
+                        専門スタッフが、年中無休で営業時間内に<br>
+                        11言語でサポートいたします。
+                    </div>
+                    <div class="more">
+                        もっと詳しく
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section__image -->
+    <section class="bottom__image">
+        <div class="bottom__image__inner">
+            <div class="bottom__box">
+                <div class="left">
+                    <figure>
+                        <img src="img/quote_image.c1dba85048f87a34551d4d52a9101395.jpg" alt="">
+                    </figure>
+                </div>
+                <div class="right">
+                    <div class="box">
+                        <div class="text">
+                            「Airbnbは自活できるのがいい<br>
+                            ですね。毎晩外食しなくても、<br>
+                            みんなで好きなものを料理でき<br>
+                            るし、とても出張とは思えない<br>
+                            ほど現地に根を下ろせます」
+                        </div>
+                        <p class="top">
+                            MARTA KUTT様
+                        </p>
+                        <p class="bottom">
+                            Transferwise社マネジャー
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- bottom__text -->
+    <section class="bottom__text">
+
+        <div class="bottom__text__inner">
+
+            <div class="box">
+
+                <div class="title">
+                    働き方を変えたいなら、Airbnbです
+                </div>
+
+                <p class="title__bottom">
+                    まずは仕事用メールアドレスの入力から
+                </p>
+
+                <div class="submit">
+                    <input type="text" name="name" id="namelabel">
+
+                    <button><a href="">メールアドレスを追加</a></button>
+                </div>
+
+                <div class="end__text">
+
+                    <p class="top">
+                        出張管理をご担当ですか？
+                    </p>
+
+                    <p class="margin">
+                        こんなにある、Airbnbビジネスプログラム法人企業様のメリット。
+                    </p>
+                    <p class="more">
+                        もっと詳しく
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer__inner">
+
+            <div class="top__box">
+
+
+                <div class="box1">
+
+                    <div class="title">サポート</div>
+
+                    <ul class="list1">
+                        
+                        <li><a href="">ヘルプセンター</a></li>
+                        <li><a href="">安全に関する情報</a></li>
+                        <li><a href="">キャンセルオプション</a></li>
+                        <li><a href="">Airbnbの新型コロナウイルスに対する取り組み</a></li>
+                        <li><a href="">障害のある方へのサポート</a></li>
+                        <li><a href="">近隣のトラブルを報告する</a></li>
+                    </ul>
+
+                </div>
+
+
+                <div class="box2">
+
+                    <div class="title">コミュニティ</div>
+
+                    <ul class="list2">
+                        
+                        <li><a href="">Airbnb.org : 災害発生時の滞在先</a></li>
+                        <li><a href="">アフガン難民支持</a></li>
+                        <li><a href="">ダイバーシティ&ビロンギングの促進</a></li>
+                        <li><a href="">差別に対する取り組み</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="box3">
+
+                    <div class="title">
+                        ホスティング
+                    </div>
+
+                    <ul class="list3">
+                       
+                        <li><a href="">ホスティングを始める</a></li>
+                        <li><a href="">AirCover : ホストに対する保護措置</a></li>
+                        <li><a href="">ホスト向けリソースを確認</a></li>
+                        <li><a href="">コミュニティフォーラムへ</a></li>
+                        <li><a href="">責任をもってホスティングする方法</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="box4">
+
+                    <div class="title">企業情報</div>
+
+                    <ul class="list4">
+                      
+                        <li><a href="">ニュースルーム</a></li>
+                        <li><a href="">新機能のご紹介</a></li>
+                        <li><a href="">Airbnb創業者のご紹介</a></li>
+                        <li><a href="">採用情報</a></li>
+                        <li><a href="">株式・投資家の皆様へ</a></li>
+                        <li><a href="">Airbnb Luxe</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bottom__box">
+                <div class="box">
+                    <div class="left">
+                        <p class="top">
+                            Airbnb Global Services Limited
+                        </p>
+                        <p class="margin">
+                            観光庁長官(01)第S0001号(2018年6月15日-2023年6月14日)
+                        </p>
+                        <p class="bottom">
+                            © 2021 Airbnb, Inc.プライバシー·利用規約·サイトマップ·企業情報
+                        </p>
+                    </div>
+                    <div class="right">
+                        <ul class="list">
+                            <li><a href=""><i class="fas fa-globe" style="margin-right: 8px"></i>日本語(JP)</a></li>
+                            <li class="second"><a href=""><i class="fas fa-yen-sign" style="margin-right: 8px"></i>JPY</a></li>
+                            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fas fa-camera-retro"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/4-1-4/js/4-1-4.js"></script>
+</body>
+
+</html>
