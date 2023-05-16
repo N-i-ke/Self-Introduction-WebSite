@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./image/icon.png">
+  <link rel="stylesheet" href="./css/oheya.css">
+  <link rel="stylesheet" href="./css/oheya.responsive.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <title>石井花壇</title>
+</head>
+<body>
+  <!-- header -->
+  <header>
+    <div class="header-inner">
+      <div class="header-left">
+        <div class="header-logo">
+          <a href="ryokan.html"> <img src="./image/top-header-logo.png" alt="石井花壇"></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="oheya.html">お部屋</a></li>
+            <li><a href="ryouri.html">お料理</a></li>
+            <li><a href="onsen.html">温泉</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- modal-nav -->
+      <nav id="nav">
+        <div class="nav__inner js-modal-open">
+          <a href="" class="js-modal-open" style="vertical-align: middle;">宿泊予約</a>
+        </div>
+        <ul>
+          <li><a href="oheya.html">お部屋</a></li>
+          <li><a href="ryouri.html">お料理</a></li>
+          <li><a href="onsen.html">温泉</a></li>
+        </ul>
+      </nav>
+      <!-- hamburger-menu -->
+      <div id="hamburger">
+        <span class="inner_line" id="line1"></span>
+        <span class="inner_line" id="line2"></span>
+        <span class="inner_line" id="line3"></span>
+      </div>
+      <div class="header-right">
+        <div class="header__right__inner js-modal-open">
+          <img src="./image/calender.png" alt="カレンダー" style="vertical-align: middle;">
+          <a href="" class="js-modal-open" style="vertical-align: middle;">宿泊予約</a>
+        </div>
+      </div>
+    </div>
+    <!-- modal-window -->
+    <div class="modal js-modal">
+      <div class="modal__bg js-modal-close"></div>
+      <div class="modal__content">
+        <!-- modal-form -->
+        <form action="">
+          <div class="modal__image js-modal-close">
+            <img src="./image/close.png" alt="">
+          </div>
+          <h2 class="modal__top">宿泊予約</h2>
+          <div class="modal__inner">
+            <p class="modal__name">お名前</p>
+            <input type="text" class="input" placeholder="石井正悟">
+            <p class="modal__mail">メールアドレス</p>
+            <input type="text" class="input" placeholder="例：Example@example.com">
+            <p class="modal__mail">ご希望プラン（空いているプランのみ表示されます）</p>
+            <select id="area_l" name="area" class="select">
+              <option value="" placeholder="プランを選択してください" style="font-size:14px;  color:#797878;">日時を選択してください</option>
+              <option value="">【期間限定】海辺の四季旬彩、贅沢美味懐石プラン </option>
+              <option value="">平日に優雅に楽しむ、特別宿泊プラン</option>
+              <option value="">絶景貸切露天と個室会席を満喫できるファミリープラン </option>
+            </select>
+            <p class="modal__mail">日時選択</p>
+            <input class="flatpickr" type="text" placeholder="日時を選択してください" readonly="readonly">
+            <div class="form__footer">
+              <a href="" class="submit">送信する</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </header>
+  <!-- main__image -->
+  <section class="main__image">
+      <div class="main__inner">
+          <div class="main__text">お部屋</div>
+      </div>
+  </section>
+  <!-- contents -->
+  <section class="contents">
+    <div class="contents  inner">
+      <div class="contents__top">
+        <p>トップ > お部屋</p>
+      </div>
+      <div class="contents__title">
+        <p>創業より受け継がれてきた石井花壇の和の造り<br> 温海の雄大な絶景を堪能していただけるように設計された客室<br> ゆるやかに流れ行く時間に身を委ねて</p>
+      </div>
+      <div class="contents__item">
+        <div class="contents__image">
+          <!-- background-imageで挿入済 -->
+        </div>
+        <div class="contents__text__wrap">
+          <div class="contents__text">
+            <p class="title">温泉付き客室</p>
+            <p class="subtitle">温海の源泉かけ流し露天風呂付き客室になります。<br> あなただけの上質な安らぎのひとときを。</p>
+            <p class="text">＊部屋数に限りがございます。<br>＊洗い場はないため、お体を先に大浴場でお流しになって頂く必要があります。</p>
+          </div>
+        </div>
+      </div>
+      <div class="contents__item">
+        <div class="contents__image__oheya2">
+        </div>
+        <div class="contents__text__oheya__wrap">
+          <div class="contents__oheya__text">
+            <p class="title">庭園付き客室</p>
+            <p class="subtitle">庭園付きの客室になります。<br> お庭を見ながら、ほっとするひとときをお過ごしください。</p>
+            <p class="text">＊お庭は複数のお客様と囲む形になります。<br> ＊部屋数に限りがあります。<br> ＊ご希望の方は「お抹茶/500円」をルームサービスさせていただきます。</p>
+          </div>
+        </div>
+      </div>
+      <div class="contents__item">
+        <div class="contents__image__oheya3">
+          <!-- background-imageで挿入済 -->
+        </div>
+        <div class="contents__text__wrap">
+          <div class="contents__text">
+            <p class="title">一般客室</p>
+            <p class="subtitle">最もベーシックな客室になります。伝統の中にモダンさを取り入れた<br>内装となっており、とても過ごしやすくしていただけます。</p>
+            <p class="text">＊全室お部屋より日本海を望むことができます。</p>
+          </div>
+        </div>
+      </div>
+      <!-- modal -->
+      <div class="modal js-modal">
+        <div class="modal__bg js-modal-close"></div>
+        <div class="modal__content">
+          <form action="">
+            <div class="modal__image js-modal-close">
+              <img src="./image/close.png" alt="">
+            </div>
+            <h2 class="modal__top">宿泊予約</h2>
+            <div class="modal__inner">
+  
+              <p class="modal__name">お名前</p>
+              <input type="text" class="input" placeholder="石井正悟">
+              <p class="modal__mail">メールアドレス</p>
+              <input type="text" class="input" placeholder="例:Example@example.com">
+              <p class="modal__mail">ご希望プラン（空いているプランのみ表示されます）</p>
+              <select id="area_l" name="area" class="select">
+                <option value="" placeholder="プランを選択してください" style="font-size:14px;  color:#797878;">日時を選択してください</option>
+                <option value="">【期間限定】海辺の四季旬彩、贅沢美味懐石プラン </option>
+                <option value="">平日に優雅に楽しむ、特別宿泊プラン</option>
+                <option value="">絶景貸切露天と個室会席を満喫できるファミリープラン </option>
+              </select>
+              <p class="modal__mail">日時選択</p>
+              <input class="flatpickr" type="text" placeholder="日時を選択してください" readonly="readonly">
+              <div class="form__footer">
+                 <a href="" class="submit">送信する</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- footer -->
+  <section class="footer__top">
+    <div class="footer__inner">
+      <div class="footer__title">
+        <p>お部屋<br>お料理<br>温泉</p>
+      </div>
+      <div class="footer__image">
+        <img src="./image/footer-logo.png" alt="">
+      </div>
+      <div class="footer__tagg">
+        <div class="footer__tag">
+          <div class="footer__text">
+            <p class="number">〒000-0000</p>
+            <p class="sub__number">山形県鶴岡市xxxxxxxxxxx</p>
+          </div>
+          <div class="footer__bottom__text">
+            <p class="sub__number">TEL.000-0000-0000</p>
+            <p>FAX.00-0000-0000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer>
+    <div class="footer__subinner">
+      <p>Copyright © 石井花壇 All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
