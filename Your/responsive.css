@@ -1,0 +1,374 @@
+@media (max-width: 870px) {
+
+  .main {
+    background-image: url(img/circle.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: top -150px right -120px;
+}
+
+
+
+  .header-nav {
+    display: none;
+  }
+
+  header {
+    position: fixed;
+    z-index: 100;
+  }
+
+  header .contact-btn {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    position: fixed;
+    z-index: 100;
+    right: 18px;
+    top: 25px;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .hamburger span {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    left: 6px;
+    background: #555;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+
+  .hamburger span:nth-child(1) {
+    top: 10px;
+  }
+
+  .hamburger span:nth-child(2) {
+    top: 20px;
+  }
+
+  .hamburger span:nth-child(3) {
+    top: 30px;
+  }
+
+  /* ナビ開いてる時のボタン */
+  .hamburger.active span:nth-child(1) {
+    top: 16px;
+    left: 6px;
+    background: #fff;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  .hamburger.active span:nth-child(2),
+  .hamburger.active span:nth-child(3) {
+    top: 16px;
+    background: #fff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  nav.globalMenuSp {
+    position: fixed;
+    display: block;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    transition: opacity .6s ease, visibility .6s ease;
+  }
+
+  nav.globalMenuSp ul {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+  }
+
+  nav.globalMenuSp ul li {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    transition: .4s all;
+  }
+
+  nav.globalMenuSp ul li:last-child {
+    padding-bottom: 0;
+  }
+
+  nav.globalMenuSp ul li:hover {
+    background: #ddd;
+  }
+
+  nav.globalMenuSp ul li a {
+    display: block;
+    color: #fff;
+    padding: 1em 0;
+    text-decoration: none;
+  }
+
+  /* このクラスを、jQueryで付与・削除する */
+  nav.globalMenuSp.active {
+    opacity: 100;
+
+  }
+
+  .feature-box {
+    flex-direction: column;
+  }
+
+  .main {
+    display: flex;
+  }
+
+  .coading11 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .coading22 {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+  }
+
+  .coading33{
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .main-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-image {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+  }
+
+  .main-image img {
+    width: 80%;
+  }
+
+
+
+  .card-blog {
+    margin-bottom: 40px;
+  }
+
+  
+}
+
+/*max-width870px*/
+@media(max-width: 600px) {
+  .footer__ul {
+    flex-direction: column;
+  }
+
+  table th,
+  table td {
+
+    width: 100%;
+
+    display: block;
+
+  }
+  table td{
+    text-align: center;
+  }
+
+
+
+}
+@media(max-width: 1024px){
+  .question.fade-in.fade-in-up.scroll-in {
+    /* margin: 0 auto; */
+    padding: 55px 30px;
+}
+
+
+
+}
+
+@media(max-width:330px){
+  .price {
+    background-color: #EEFBFB;
+    
+}
+}
+
+
+@media(max-width:400px ){
+  .form-button {
+    background: #0C449B 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    opacity: 1;
+    color: #fff;
+    padding: 2px 8px;
+    margin-left: 5px;
+}
+
+.form-item {
+   padding-left: 20px; 
+  padding-right: 20px; 
+  text-align: left;
+}
+
+
+}
+
+
+
+
+@media(max-width:320px){
+ .hamburger {
+    display: block;
+    position: fixed;
+    z-index: 100;
+    /* right: 18px; */
+    right: 3px;
+    top: 25px;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    text-align: center;
+}
+
+@media(max-width:380px){
+  .main-image img {
+    right: 5% !important;   /*css 変更*/
+    top: 65px !important;
+    width: 70%;
+    z-index: 10 !important;
+    position: absolute;
+}
+}
+
+
+
+  
+table th{
+  position: relative;
+}
+
+table th:after{
+  content: '';
+  display: block;
+  position:absolute;
+  left: 0%;
+  transform: translate(0%);
+  bottom: 0px;
+  width:279px;
+  height:1px;
+  background-color: #00000029;
+}
+
+
+   
+    
+   
+
+    
+
+  
+
+  th{
+   border: none;
+  }
+
+  td{
+    border: none;
+  }
+ 
+
+
+
+}
+
+@media (min-width: 761px) {
+  .btn-trigger {
+    display: none;
+  }
+
+
+}
+
+@media(max-width: 680px) {
+  .blog .cards {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+
+  }
+
+  .card-blog {
+    margin-bottom: 40px;
+  }
+
+  .feature-ttl{
+    padding: 10px 30px;
+  }
+
+
+}
+
+@media (max-width: 1080px) {
+  .form {
+    padding: 0 20px;
+  }
+
+  .feature-inner{
+    padding: 0 20px;
+  }
+
+  
+  .main-image img{
+    
+    right: 5%;
+    top: 20%;
+    z-index: 10;
+    position: absolute;
+  }
+}
+
+@media (max-width: 2000px){
+ 
+  .main {
+    background-image: url(img/circle.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: top -150px;
+}
+
+
+
+}
+
+/*追加のcss*/
+
+
+@media (max-width: 800px) and (min-width: 600px){
+  .main-inner {
+    flex-direction: column;
+    text-align: center;
+    margin-right: auto;
+    margin-left: 80px;
+}
+}
+

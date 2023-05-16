@@ -1,7 +1,4 @@
 $(function(){
-  /*=================================================
-  スマホメニュー
-===================================================*/
   $('.menu-btn').on('click', function() {
     if (!$('#header').hasClass('open')) {
       $('#header').addClass('open');
@@ -9,14 +6,10 @@ $(function(){
       $('#header').removeClass('open');
     }
   });
-
   $('#mask').on('click', function() {
     $('#header').removeClass('open');
   });
 });
-/*=================================================
-  フワッとメニュー
-===================================================*/
 $('.animated').waypoint({
   handler(direction) {
     if (direction === 'down') {
@@ -26,20 +19,16 @@ $('.animated').waypoint({
   },
   offset: '60%',
 });
-
-//fadeInのアニメーション 
+//windowがscrollされた時のイベント
 $(window).scroll(function () {
-    // クラスを追加するwindowの位置を設定
     var scrollTop = $(this).scrollTop();
     var scrollBottom = scrollTop + $(this).height();
     var effectPos = scrollBottom - 50;
-    
     // eachでliを順番に処理
     $(".animated-li").each(function (i) {
         if(effectPos > $(this).offset().top){
             var that = this;
-
-            // 0.4s毎にずれて表示
+            // 0.3s毎にずれて表示
             setTimeout(function () {
                $(that).addClass("fadein");
             }, 300 * i);
@@ -49,18 +38,14 @@ $(window).scroll(function () {
     $(".animated-div").each(function (i) {
         if(effectPos > $(this).offset().top){
             var that = this;
-
-            // 0.4s毎にずれて表示
+            
             setTimeout(function () {
                $(that).addClass("fadein");
             }, 200 * i);
         }
     });
 });
-/*=================================================
-  タップで移動
-===================================================*/
-// ボタンをクリックしたらページトップにスクロールする
+
 $('.top').on('click', (e) => {
   // ボタンのhrefに遷移しない
   e.preventDefault();
@@ -127,7 +112,6 @@ $('.text-container').waypoint(function(direction){
 /*=================================================
   スタートのアニメーション
 ===================================================*/
-
 //startのloading jquery
 $(function() {
 	setTimeout(function(){
