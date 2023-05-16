@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./image/icon.png">
+  <link rel="stylesheet" href="./css/onsen.css">
+  <link rel="stylesheet" href="./css/onsen.responsive.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <title>石井花壇</title>
+</head>
+<body>
+  <!-- header -->
+  <header>
+    <div class="header-inner">
+      <div class="header-left">
+        <div class="header-logo">
+          <a href="ryokan.html"> <img src="./image/top-header-logo.png" alt="石井花壇"></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="oheya.html">お部屋</a></li>
+            <li><a href="ryouri.html">お料理</a></li>
+            <li><a href="onsen.html">温泉</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- modal-nav -->
+      <nav id="nav">
+        <div class="nav__inner js-modal-open">
+          <a href="" class="js-modal-open" style="vertical-align: middle;">宿泊予約</a>
+        </div>
+        <ul>
+          <li><a href="oheya.html">お部屋</a></li>
+          <li><a href="ryouri.html">お料理</a></li>
+          <li><a href="onsen.html">温泉</a></li>
+        </ul>
+      </nav>
+      <!-- hamburger-menu -->
+      <div id="hamburger">
+        <span class="inner_line" id="line1"></span>
+        <span class="inner_line" id="line2"></span>
+        <span class="inner_line" id="line3"></span>
+      </div>
+      <div class="header-right">
+        <div class="header__right__inner js-modal-open">
+          <img src="./image/calender.png" alt="カレンダー" style="vertical-align: middle;">
+          <a href="" class="js-modal-open" style="vertical-align: middle;">宿泊予約</a>
+        </div>
+      </div>
+    </div>
+    <!-- modal-window -->
+    <div class="modal js-modal">
+      <div class="modal__bg js-modal-close"></div>
+      <div class="modal__content">
+        <!-- modal-form -->
+        <form action="">
+          <div class="modal__image js-modal-close">
+            <img src="./image/close.png" alt="">
+          </div>
+          <h2 class="modal__top">宿泊予約</h2>
+          <div class="modal__inner">
+            <p class="modal__name">お名前</p>
+            <input type="text" class="input" placeholder="石井正悟">
+            <p class="modal__mail">メールアドレス</p>
+            <input type="text" class="input" placeholder="例：Example@example.com">
+            <p class="modal__mail">ご希望プラン（空いているプランのみ表示されます）</p>
+            <select id="area_l" name="area" class="select">
+              <option value="" placeholder="プランを選択してください" style="font-size:14px;  color:#797878;">日時を選択してください</option>
+              <option value="">【期間限定】海辺の四季旬彩、贅沢美味懐石プラン </option>
+              <option value="">平日に優雅に楽しむ、特別宿泊プラン</option>
+              <option value="">絶景貸切露天と個室会席を満喫できるファミリープラン </option>
+            </select>
+            <p class="modal__mail">日時選択</p>
+            <input class="flatpickr" type="text" placeholder="日時を選択してください" readonly="readonly">
+            <div class="form__footer">
+              <a href="" class="submit">送信する</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </header>
+  <!-- main__image -->
+  <section class="main__image">
+      <div class="main__inner">
+          <div class="main__text">温泉</div>
+      </div>
+  </section>
+  <!-- contents -->
+  <section class="contents">
+    <div class="contents  inner">
+      <div class="contents__top">
+        <p>トップ >温泉</p>
+      </div>
+      <div class="contents__title">
+        <p>心も身体も癒やす汐の温泉。<br> 湯あたりしにくく、赤ちゃんから年配の方までどなたでもゆっくりと安心して入っていただけます。<br>柔らかく優しい湯にじっくりと漬かれば、心身共にリラックスできます。</p>
+      </div>
+      <div class="contents__item">
+        <div class="contents__image">
+        </div>
+        <div class="contents__text__wrap">
+          <div class="contents__text">
+            <p class="title">貸し切り露天風呂「雲居の湯」</p>
+            <p class="subtitle">弱酸性の湯質が優しく肌を包み込むような心地よさ<br> 最上階の露天風呂「雲居の湯」では、湯冷めしにくい食塩泉を<br> 熱海の町並みを遠方に望みながら・・・</p>
+          </div>
+        </div>
+      </div>
+      <div class="contents__item">
+        <div class="contents__image__oheya2">
+        </div>
+        <div class="contents__text__oheya__wrap">
+          <div class="contents__oheya__text">
+            <p class="title">美肌を促す乳白色の硫黄泉を</p>
+            <p class="subtitle">まじりっけなしの白いにごり湯。鳥海山から引いた酸性の強い硫酸塩泉を、<br>たっぷりと掛け流しています。<br> 四季の移り変わりを、天然温泉の湯に浸りながら味わってください。</p>
+          </div>
+        </div>
+      </div>
+    </div> <!--innerタグの終わり-->
+  </section>
+  <!-- kounou -->
+  <section class="kounou">
+    <div class="kounou__padding__inner">
+      <div class="kounou inner">
+        <div class="kounou__contents">
+          <p class="onsen__title">温泉の効能</p>
+          <table>
+            <tr>
+              <th>効能</th>
+              <td>神経痛・慢性関節リューマチ・腰痛・冷え性・慢性婦人病・うちみなど</td>
+            </tr>
+            <tr>
+              <th>泉質</th>
+              <td>ナトリウム・カルシウム-塩化物泉</td>
+            </tr>
+            <tr>
+              <th>飲用効果</th>
+              <td>弱塩化物泉は肌にやわらかなため、高齢者や病後の回復期によく、飲用すれば慢性便秘や慢性消化<br>器病に効果があります。</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer__top -->
+  <section class="footer__top">
+    <div class="footer__inner">
+      <div class="footer__title">
+        <p>お部屋<br>お料理<br>温泉</p>
+      </div>
+      <div class="footer__image">
+        <img src="./image/footer-logo.png" alt="">
+      </div>
+      <div class="footer__tagg">
+        <div class="footer__tag">
+          <div class="footer__text">
+          <p class="number">〒000-0000</p>
+          <p class="sub__number">山形県鶴岡市xxxxxxxxxxx</p>
+        </div>
+        <div class="footer__bottom__text">
+          <p class="sub__number">TEL.000-0000-0000</p>
+          <p>FAX.00-0000-0000</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer__subinner">
+      <p>Copyright © 石井花壇 All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
