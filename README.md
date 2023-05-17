@@ -1,4 +1,3 @@
-# Self-Introduction-WebSite
 <h1>自己紹介サイト</h1>
 <ul>
     <li>使用技術</li>
