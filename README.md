@@ -4,6 +4,7 @@
     <li>html,css,jquery,javaScript</li>
 </ul>
 <h2>閲覧方法</h2>
+<p>こちらがリンクになります→https://n-i-ke.github.io/Self-Introduction-WebSite/</p>
 <p>zipファイルをダウンロードして解凍しindex.htmlを使用しているブラウザで開くことで、閲覧できます。</p>
 <h2>説明</h2>
 <p>コンテンツ部分に作成したWebサイトが閲覧できます。クリックすることでディレクトリ内にあるWEBサイトに遷移します</p>
