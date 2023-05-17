@@ -3,7 +3,7 @@ slideMainImage();
 
 function slideMainImage() { 
   const img = [
-
+    
   ];
   let count = -1;
 
