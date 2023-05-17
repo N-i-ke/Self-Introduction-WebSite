@@ -213,10 +213,8 @@ nav
 #nav{
     width:300px;
     min-height:100vh;
-    background-color:#1a1a1a;
     color:#ffffff;
     z-index:99;
-    padding:30px 50px 50px 50px;
     position:fixed;
     top:0;
     left:-400px;
@@ -226,7 +224,6 @@ nav
     overflow-x:hidden;
     overflow-y:auto;
     font-family: 'Quicksand', sans-serif;
-    
 }
 #nav li{
     padding:0 0;
