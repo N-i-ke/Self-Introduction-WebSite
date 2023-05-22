@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <!-- reset.cssの読み込み -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+    <!-- jQueryアニメーションの実装 -->
+    <script>
+      $(function () {
+      $(".menu-btn").on("click", function () {
+      if (!$("#header").hasClass("open")) {
+        $("#header").addClass("open");
+      } else {
+        $("#header").removeClass("open");
+      }
+      });
+  $("#mask").on("click", function () {
+    $("#header").removeClass("open");
+  });
+});
+$(".animated").waypoint({
+  handler(direction) {
+    if (direction === "down") {
+      $(this.element).addClass("fadeInUp");
+      // this.destroy();
+    }
+  },
+  offset: "60%",
+});
+//windowがscrollされた時のイベント
+$(window).scroll(function () {
+  var scrollTop = $(this).scrollTop();
+  var scrollBottom = scrollTop + $(this).height();
+  var effectPos = scrollBottom - 50;
+  // eachでliを順番に処理
+  $(".animated-li").each(function (i) {
+    if (effectPos > $(this).offset().top) {
+      var that = this;
+      // 0.3s毎にずれて表示
+      setTimeout(function () {
+        $(that).addClass("fadein");
+      }, 300 * i);
+    }
+  });
+  // eachでliを順番に処理
+  $(".animated-div").each(function (i) {
+    if (effectPos > $(this).offset().top) {
+      var that = this;
+
+      setTimeout(function () {
+        $(that).addClass("fadein");
+      }, 200 * i);
+    }
+  });
+});
+
+$(".top").on("click", (e) => {
+  // ボタンのhrefに遷移しない
+  e.preventDefault();
+  // 600ミリ秒かけてトップに戻る
+  $("html, body").animate({ scrollTop: 0 }, 1400);
+});
+// ページの途中でリロード（再読み込み）された場合でも、ボタンが表示されるようにする
+
+$(".work").on("click", (e) => {
+  // ボタンのhrefに遷移しない
+  e.preventDefault();
+  // 600ミリ秒かけてid="contents"までスクロールする
+  const workTop = $("#work").offset().top;
+  $("html, body").animate({ scrollTop: workTop }, 1400);
+});
+// ページの途中でリロード（再読み込み）された場合でも、ボタンが表示されるようにする
+
+$(".about").on("click", (e) => {
+  // ボタンのhrefに遷移しない
+  e.preventDefault();
+  // 600ミリ秒かけてid="contents"までスクロールする
+  const aboutTop = $("#about").offset().top;
+  $("html, body").animate({ scrollTop: aboutTop }, 1400);
+});
+
+$(".skill").on("click", (e) => {
+  // ボタンのhrefに遷移しない
+  e.preventDefault();
+  // 600ミリ秒かけてid="contents"までスクロールする
+  const skillTop = $("#skill").offset().top;
+  $("html, body").animate({ scrollTop: skillTop }, 1400);
+});
+
+$(".service").on("click", (e) => {
+  // ボタンのhrefに遷移しない
+  e.preventDefault();
+  // 600ミリ秒かけてid="contents"までスクロールする
+  const skillTop = $("#service").offset().top;
+  $("html, body").animate({ scrollTop: skillTop }, 1400);
+});
+
+$(".contact").on("click", (e) => {
+  // ボタンのhrefに遷移しない
+  e.preventDefault();
+  // 600ミリ秒かけてid="contents"までスクロールする
+  const contactTop = $("#contact").offset().top;
+  $("html, body").animate({ scrollTop: contactTop }, 1400);
+});
+
+/*=================================================
+  sec-titleのアニメーション
+===================================================*/
+$(".text-container").waypoint(
+  function (direction) {
+    var activePoint = $(this.element);
+    //scroll down
+    if (direction === "down") {
+      activePoint.addClass("active");
+    } else {
+      activePoint.removeClass("active");
+    }
+  },
+  { offset: "70%" }
+);
+
+/*=================================================
+  スタートのアニメーション
+===================================================*/
+//startのloading jquery
+$(function () {
+  setTimeout(function () {
+    $(".start .1").fadeIn(1);
+  }, 100); //0.5秒後にロゴをフェードイン!
+  setTimeout(function () {
+    $(".start .2").fadeIn(1);
+  }, 200); //0.5秒後にロゴをフェードイン!
+  setTimeout(function () {
+    $(".start .3").fadeIn(1);
+  }, 300); //0.5秒後にロゴをフェードイン!
+  setTimeout(function () {
+    $(".start .4").fadeIn(1);
+  }, 400); //0.5秒後にロゴをフェードイン!
+  setTimeout(function () {
+    $(".start .5").fadeIn(1);
+  }, 500); //0.5秒後にロゴをフェードイン!
+  setTimeout(function () {
+    $(".start .6").fadeIn(1);
+  }, 600); //0.5秒後にロゴをフェードイン!
+  setTimeout(function () {
+    $(".start .7").fadeIn(1);
+  }, 700); //0.5秒後にロゴをフェードイン!
+  setTimeout(function () {
+    $(".start .8").fadeIn(1);
+  }, 900); //0.5秒後にロゴをフェードイン!
+  setTimeout(function () {
+    $(".start .9").fadeIn(1);
+  }, 1000); //0.5秒後にロゴをフェードイン!
+  setTimeout(function () {
+    $(".start .10").fadeIn(1);
+  }, 1100); //0.5秒後にロゴをフェードイン!
+  setTimeout(function () {
+    $(".start .11").fadeIn(1);
+  }, 1200); //0.5秒後にロゴをフェードイン!
+  setTimeout(function () {
+    $(".start .12").fadeIn(1);
+  }, 1300); //0.5秒後にロゴをフェードイン!
+  setTimeout(function () {
+    $(".start .13").fadeIn(1);
+  }, 1400); //0.5秒後にロゴをフェードイン!
+  setTimeout(function () {
+    $(".start .14").fadeIn(1);
+  }, 1500); //0.5秒後にロゴをフェードイン!
+  setTimeout(function () {
+    $(".start .15").fadeIn(1);
+  }, 1600); //0.5秒後にロゴをフェードイン!
+  setTimeout(function () {
+    $(".start .16").fadeIn(1);
+  }, 1700); //0.5秒後にロゴをフェードイン!
+  setTimeout(function () {
+    $(".start .17").fadeIn(1);
+  }, 2000); //0.5秒後にロゴをフェードイン!
+  setTimeout(function () {
+    $(".start .18").fadeIn(1);
+  }, 2100); //0.5秒後にロゴをフェードイン!
+  setTimeout(function () {
+    $(".start .19").fadeIn(1);
+  }, 2200); //0.5秒後にロゴをフェードイン!
+  setTimeout(function () {
+    $(".start .20").fadeIn(1);
+  }, 2300); //0.5秒後にロゴをフェードイン!
+  setTimeout(function () {
+    $(".start .21").fadeIn(1);
+  }, 2400); //0.5秒後にロゴをフェードイン!
+  setTimeout(function () {
+    $(".start .22").fadeIn(1);
+  }, 2500); //0.5秒後にロゴをフェードイン!
+  setTimeout(function () {
+    $(".start .23").fadeIn(1);
+  }, 2600); //0.5秒後にロゴをフェードイン!
+  setTimeout(function () {
+    $(".start .24").fadeIn(1);
+  }, 2700); //0.5秒後にロゴをフェードイン!
+  setTimeout(function () {
+    $(".start .25").fadeIn(1);
+  }, 2800); //0.5秒後にロゴをフェードイン!
+  setTimeout(function () {
+    $(".start .26").fadeIn(1);
+  }, 2900); //0.5秒後にロゴをフェードイン!
+  setTimeout(function () {
+    $(".start .27").fadeIn(1);
+  }, 3000); //0.5秒後にロゴをフェードイン!
+  setTimeout(function () {
+    $(".start .28").fadeIn(1);
+  }, 3100); //0.5秒後にロゴをフェードイン!
+  setTimeout(function () {
+    $(".start .29").fadeIn(1);
+  }, 3200); //0.5秒後にロゴをフェードイン!
+  setTimeout(function () {
+    $(".start .30").fadeIn(1);
+  }, 3300); //0.5秒後にロゴをフェードイン!
+  setTimeout(function () {
+    $(".start .31").fadeIn(1);
+  }, 3400); //0.5秒後にロゴをフェードイン!
+  setTimeout(function () {
+    $(".start .32").fadeIn(1);
+  }, 3500); //0.5秒後にロゴをフェードイン!
+  setTimeout(function () {
+    $(".start .33").fadeIn(1);
+  }, 3600); //0.5秒後にロゴをフェードイン!
+  setTimeout(function () {
+    $(".start .34").fadeIn(1);
+  }, 3700); //0.5秒後にロゴをフェードイン!
+  setTimeout(function () {
+    $(".start .35").fadeIn(1);
+  }, 3800); //0.5秒後にロゴをフェードイン!
+  setTimeout(function () {
+    $(".start .36").fadeIn(1);
+  }, 3900); //0.5秒後にロゴをフェードイン!
+  setTimeout(function () {
+    $(".start .37").fadeIn(1);
+  }, 4000); //0.5秒後にロゴをフェードイン!
+  setTimeout(function () {
+    $(".start").fadeOut(800);
+  }, 4000); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
+});
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="jquery.waypoints.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
