@@ -316,6 +316,73 @@ mainコンテンツ部分は
 }
 
 /*----------------------------------------------------
+index.html work contents
+------------------------------------------------------*/
+#work {
+  background-color: #999;
+}
+
+#work .work-wrapper ul {
+  padding: 50px 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#work .work-item {
+  box-sizing: border-box;
+  padding: 5px;
+  width: 33.3%;
+  min-width: 333px;
+  text-align: center;
+}
+
+#work .work-item:hover .work-item li {
+  padding: 50px;
+}
+
+#work figure {
+  margin: 0;
+  position: relative;
+}
+
+#work figcaption {
+  position: absolute;
+  top: -4%;
+  left: -4%;
+  width: 108%;
+  height: 104%;
+  background-color: rgba(255, 255, 255, 0);
+  transition: all 0.8s;
+  color: rgba(255, 255, 255, 0);
+  text-align: center;
+}
+
+#work figcaption:hover {
+  top: 7%;
+  left: 7%;
+  width: 86%;
+  height: 86%;
+  background-color: rgba(255, 46, 99, 0.6);
+  color: rgb(255, 255, 255);
+  transition: all 0.8s;
+}
+
+#work figcaption h3 {
+  font-size: 0.7rem;
+}
+
+#work figcaption p {
+  font-size: 0.2rem;
+}
+
+#work figcaption .fig-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+/*----------------------------------------------------
 footer
 ------------------------------------------------------*/
 #footer {
