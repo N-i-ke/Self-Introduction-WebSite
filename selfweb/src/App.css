@@ -91,14 +91,9 @@ li {
 }
 
 /*fadeInUpのクラス名*/
-.animated {
-  opacity: 0;
-}
-
 /*fadeIn 0.3s*/
 .animated-li {
   /*デフォルトで透明度0に指定*/
-  opacity: 0;
   transition: 1s;
 }
 
