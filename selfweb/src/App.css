@@ -390,6 +390,101 @@ about
 }
 
 /*----------------------------------------------------
+skill
+------------------------------------------------------*/
+#skill::before {
+  /* 透過した黒を上から重ねるイメージ */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* 自由に位置指定 */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: " ";
+}
+
+#skill .sec-title {
+  color: rgba(255, 255, 255, 0.1882352941);
+}
+
+#skill .skill-wrap {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  max-width: 80%;
+  justify-content: space-around;
+  margin-left: 10%;
+  padding: 30px 20px;
+  font-family: "Quicksand", sans-serif;
+  color: #333;
+}
+
+#skill .skill-wrap .skill-item {
+  text-align: center;
+}
+
+#skill .fab {
+  font-size: 5rem;
+  transition: all 0.5s;
+}
+
+#skill .fab:hover {
+  transform: rotate(-25deg);
+  transition: all 0.5s;
+}
+
+/*----------------------------------------------------
+service
+------------------------------------------------------*/
+#service {
+  width: 100%;
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#service .sec-title {
+  color: rgba(255, 255, 255, 0.1882352941);
+}
+
+#service .service-wrapper {
+  color: #333;
+  margin-right: 10%;
+  margin-left: 10%;
+  display: flex;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#service i {
+  font-size: 3rem;
+}
+
+#service .service-wrap-right {
+  width: 45%;
+  padding: 30px;
+  margin-bottom: 130px;
+}
+
+#service .service-wrap-right p {
+  text-align: left;
+}
+
+#service .service-wrap-left {
+  width: 45%;
+  margin-right: 10%;
+  padding: 30px;
+  margin-bottom: 130px;
+}
+
+#service .service-wrap-left p {
+  text-align: left;
+}
+
+/*----------------------------------------------------
 footer
 ------------------------------------------------------*/
 #footer {
