@@ -103,10 +103,6 @@ li {
 /*スクロールした時に追加されるクラス*/
 /*テキストアニメーション*/
 /*アニメーションするプロパティを設定します*/
-.text-container.active:before {
-  transform: translateX(100%);
-}
-
 /*----------------------------------------------------
 header
 ------------------------------------------------------*/
@@ -334,6 +330,63 @@ index.html work contents
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
+}
+
+/*----------------------------------------------------
+about
+------------------------------------------------------*/
+#about {
+  padding-bottom: 70px;
+}
+
+#about .icon-wrapper {
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  /*text-align:center;*/
+  display: flex;
+  justify-content: center;
+}
+
+#about .icon-wrapper img {
+  width: 35vw;
+  box-shadow: 0px 0px 6px #eee;
+}
+
+#about .icon-wrapper .name {
+  text-orientation: mixed;
+  /*display:-webkit-flex;*/
+  /*display:flex;*/
+  letter-spacing: 5px;
+}
+
+#about .icon-wrapper .name .name-main {
+  font-size: 3rem;
+  margin-right: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#about .icon-wrapper .name .name-sub {
+  margin: 0;
+  color: #ff2e63;
+}
+
+#about .about-wrapper {
+  width: 70%;
+  padding-right: 15%;
+  padding-left: 15%;
+  line-height: 2.5;
+}
+
+#about .about-wrapper p {
+  font-size: 0.8rem;
+}
+
+#about .about-wrapper h4 {
+  color: #ff2e63;
+  filter: drop-shadow(1px 1px 5px #c0c0c0);
+  font-size: 1.2rem;
 }
 
 /*----------------------------------------------------
