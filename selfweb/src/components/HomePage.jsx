@@ -207,23 +207,23 @@ return (
           <h4>HTML</h4>
         </div>
         <div className="skill-item animated-div">
-          <i className="fab fa-html5"></i>
+          <i className="fab fa-css3-alt"></i>
           <h4>CSS</h4>
         </div>
         <div className="skill-item animated-div">
-          <i className="fab fa-html5"></i>
+          <i className="fab fa-sass"></i>
           <h4>SASS</h4>
         </div>
         <div className="skill-item animated-div">
-          <i className="fab fa-html5"></i>
+          <i className="fab fa-js-square"></i>
           <h4>JavaScript</h4>
         </div>
         <div className="skill-item animated-div">
-          <i className="fab fa-html5"></i>
+          <i className="fab fa-php"></i>
           <h4>PHP</h4>
         </div>
         <div className="skill-item animated-div">
-          <i className="fab fa-html5"></i>
+          <i className="fab fa-wordpress"></i>
           <h4>WordPress</h4>
         </div>
       </div>
@@ -252,17 +252,15 @@ return (
       </div>
     </section>
     {/* contact */}
-    <section id='contact'>
-      <figure className='text-container col2'>
+    <section id="contact">
+      <figure className="text-container col2">
         <h2 className="sec-title text-container__title">
           Contact
-            <span className="sub-sec-title">
-            Contact
-            </span>
-          </h2>
+          <span className="sub-sec-title">Contact</span>
+        </h2>
       </figure>
       <div className="contact-wrapper animateed">
-        <form className='contact-form' action="#">
+        <form className="contact-form" action="#">
           <dl>
             <dt>
               <label for="name">NAME:</label>
@@ -274,7 +272,7 @@ return (
               <label for="mail">YOUR MAIL:</label>
             </dt>
             <dd>
-              <input id='mail' type="text" />
+              <input id="mail" type="text" />
             </dd>
             <dt>
               <label for="message">MESSAGE:</label>
@@ -283,7 +281,7 @@ return (
               <textarea id="message" name="your-message"></textarea>
             </dd>
           </dl>
-          <input id='button' type="submit" />
+          <input id="button" type="submit" />
         </form>
       </div>
     </section>
