@@ -50,7 +50,6 @@ li {
   text-align: center;
   font-size: 7rem;
   color: rgba(131, 255, 230, 0.1882352941);
-  margin-top: 0;
   position: relative;
   letter-spacing: 5px;
   font-weight: 900;
@@ -485,13 +484,106 @@ service
 }
 
 /*----------------------------------------------------
+contact
+------------------------------------------------------*/
+#contact {
+  padding-top: 20px;
+  background-color: #808080;
+  text-align: center;
+}
+
+#contact .sec-title {
+  /*font-size:6rem;*/
+}
+
+#contact .sub-sec-title {
+  /*font-size:2rem;*/
+}
+
+#contact .contact-wrapper {
+  padding-top: 0px;
+  margin-bottom: 0;
+  font-family: "Montserrat Subrayada", sans-serif;
+}
+
+#contact .contact-wrapper form {
+  margin: 0 auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+#contact .contact-wrapper dt {
+  padding: 10px;
+}
+
+#contact .contact-wrapper dd {
+  margin-left: 0;
+}
+
+#contact .contact-wrapper p {
+  margin-top: 40px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+}
+
+#contact .contact-wrapper #name, #name {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+  width: 98%;
+}
+
+#contact .contact-wrapper #name, #mail {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+  width: 98%;
+}
+
+#contact #message {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: none;
+  border-radius: 4px;
+  width: 98%;
+  margin-bottom: 20px;
+}
+
+#contact #button {
+  padding: 10px;
+  border: 2px solid #dc143c;
+  background-color: #dc143c;
+  color: #fff;
+  border-radius: 7px;
+  width: 200px;
+  margin: 0 auto;
+  font-family: "Montserrat Subrayada", sans-serif;
+  transition: all 0.5s;
+}
+
+#contact #button:hover {
+  color: #dc143c;
+  border: 2px solid #fff;
+  background-color: #fff;
+  transition: all 0.5s;
+}
+
+/*----------------------------------------------------
 footer
 ------------------------------------------------------*/
 #footer {
   text-align: center;
-  background-color: #a99e9e;
+  background-color: rgb(28, 28, 28);
   color: #fff;
   height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #footer .btn-sns {

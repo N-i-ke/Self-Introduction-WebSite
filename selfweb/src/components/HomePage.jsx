@@ -252,6 +252,41 @@ return (
       </div>
     </section>
     {/* contact */}
+    <section id='contact'>
+      <figure className='text-container col2'>
+        <h2 className="sec-title text-container__title">
+          Contact
+            <span className="sub-sec-title">
+            Contact
+            </span>
+          </h2>
+      </figure>
+      <div className="contact-wrapper animateed">
+        <form className='contact-form' action="#">
+          <dl>
+            <dt>
+              <label for="name">NAME:</label>
+            </dt>
+            <dd>
+              <input id="name" type="text" />
+            </dd>
+            <dt>
+              <label for="mail">YOUR MAIL:</label>
+            </dt>
+            <dd>
+              <input id='mail' type="text" />
+            </dd>
+            <dt>
+              <label for="message">MESSAGE:</label>
+            </dt>
+            <dd>
+              <textarea id="message" name="your-message"></textarea>
+            </dd>
+          </dl>
+          <input id='button' type="submit" />
+        </form>
+      </div>
+    </section>
   </main>
 );
 }
