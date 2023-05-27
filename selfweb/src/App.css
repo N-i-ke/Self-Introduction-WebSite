@@ -51,7 +51,6 @@ li {
   font-size: 7rem;
   color: rgba(131, 255, 230, 0.1882352941);
   margin-top: 0;
-  margin-bottom: 0;
   position: relative;
   letter-spacing: 5px;
   font-weight: 900;
@@ -102,40 +101,8 @@ li {
 }
 
 /*スクロールした時に追加されるクラス*/
-.fadein {
-  opacity: 1;
-}
-
 /*テキストアニメーション*/
-.text-container {
-  overflow: hidden;
-  position: relative;
-}
-
-.text-container__title {
-  display: block;
-  position: relative;
-  transition: all 0.5s 0.3s ease;
-  z-index: 0;
-}
-
-.text-container:before {
-  background: #333;
-  content: "";
-  display: block;
-  height: 100%;
-  position: absolute;
-  transform: translateX(-100%);
-  transition: all 0.8s 0s ease;
-  width: 100%;
-  z-index: 1;
-}
-
 /*アニメーションするプロパティを設定します*/
-.text-container.active .text-container__title {
-  opacity: 1;
-}
-
 .text-container.active:before {
   transform: translateX(100%);
 }

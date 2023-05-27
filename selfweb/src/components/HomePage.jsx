@@ -15,9 +15,11 @@ return (
     {/* work */}
     <section id="work">
       <figure className="text-container col2">
-        My Work
         <h2 className="sec-title text-container__title">
-          <span className="sub-sec-title">My Work</span>
+          My Work
+          <span className="sub-sec-title">
+            My Work
+          </span>
         </h2>
       </figure>
       <div className="work-wrapper">
@@ -149,6 +151,33 @@ return (
             </figure>
           </li>
         </ul>
+      </div>
+    </section>
+    {/* about */}
+    <section id="about">
+      <figure className="text-container col2">
+        <h2 className="sec-title text-container__title">
+          About
+          <span className="sub-sec-title">About</span>
+        </h2>
+      </figure>
+      <div className="profile">
+        <div className="icon-wrapper">
+          <h3 className="name animated">
+            <p className="name-main">
+              N-i-ke
+            </p>
+            <p className="name-sub">
+              N-i-ke
+            </p>
+          </h3>
+        </div>
+        <div className="about-wrapper">
+          <h4 className="animated">
+            <i className="fas fa-chess-king"></i>
+            Personal History
+          </h4>
+        </div>
       </div>
     </section>
   </main>
